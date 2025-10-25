@@ -15,8 +15,6 @@ A simple and interactive web application where users can post questions under a 
 
 
 📦 Installation
-- Clone the repository
-git clone https://github.com/your-username/discussion-app.git
 cd discussion-app
 - Install dependencies
 npm install
