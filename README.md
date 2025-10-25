@@ -1,2 +1,26 @@
-# Discussion_App
-Discussion Hub is a dynamic platform where curiosity meets community. Users can post a subject and a question—whether it's academic, technical, or just something they're wondering about—and others jump in to share answers, insights, and experiences.
+Discussion App
+A simple and interactive web application where users can post questions under a subject and receive answers from other users. Built with a clean frontend and a Node.js backend using Express.
+🚀 Features
+- Post a subject and question
+- View and answer questions from other users
+- Responsive UI with HTML, CSS, and JavaScript
+- Backend API built with Express
+- CORS-enabled for cross-origin requests
+- Auto-reloading during development with Nodemon
+🛠️ Tech Stack
+|  |  | 
+|  |  | 
+|  |  | 
+|  |  | 
+
+
+📦 Installation
+- Clone the repository
+git clone https://github.com/your-username/discussion-app.git
+cd discussion-app
+- Install dependencies
+npm install
+- Start the server
+nodemon index.js
+- Open the frontend
+Open index.html in your browser or serve it using a static server.
