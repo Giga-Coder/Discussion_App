@@ -1,0 +1,298 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+nav{
+  background-color: lightblue;
+  padding: 12px;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0.2rem;
+
+}
+.left{
+  width : 48%;
+  height: 100%;
+  border-right: 3px solid #f1faee;
+
+
+}
+#new-btn{
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      margin: auto;
+      margin-left: 10px;
+      margin-right: 30px;
+      width: 10%;
+      border-radius: 5px;
+
+}
+.search{
+  width: 40%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.question-section{
+  width: 100%;
+  /* min-height: 100vh; */
+  /* height: auto; */
+  height: 80vh;
+  background-color: #f1faee;
+  padding-top: 0.5rem;
+  overflow-y: auto;
+  scrollbar-width: thin; 
+  scrollbar-color: #adb5bd #f8f9fa; 
+}
+
+.question{
+  margin: auto;
+  width: 80%;
+  border-bottom: 1px solid whitesmoke;
+  background-color: #f4f1de;
+
+}
+.question h2{
+  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 6vh;
+}
+.question p{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  padding-left: 0.5rem;
+}
+
+.right{
+  width: 48%;
+  height: 70vh;
+  padding-left: 2rem;
+  /* border: 2px solid brown; */
+  
+}
+
+.default-content h2{
+  margin-top : 2rem;
+  font-size: 6vh;
+}
+.default-content p{
+  margin-top: 1rem;
+}
+
+.question-form input{
+  width: 20%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  padding: 5px;
+
+}
+.question-form textarea {
+  width: 100%;
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  float: right
+}
+.question-box {
+  display: none; /* Initially hidden */
+  padding: 1.5rem;
+  margin-top: 2rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+}
+
+.question-box h2 {
+  font-size: 24px;
+  color: #007bff; 
+  margin-bottom: 1rem; 
+  text-align: left;
+}
+
+.question-display {
+  padding: 1rem;
+  background-color: #ffffff; 
+  border-radius: 8px; 
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.question-display h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333; 
+  margin-bottom: 0.5rem; 
+}
+
+.question-display p {
+  font-size: 16px;
+  color: #555; 
+  line-height: 1.5;
+  margin-bottom: 1rem; 
+}
+
+/* Resolve button */
+#resolve-btn {
+  float:right;
+  top: 10px; 
+  right: 10px; 
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px; 
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.resolve-btn:hover {
+  background-color: #0056b3; 
+}
+
+.response-section {
+  display: none;
+  margin-top: 2rem;
+  
+}
+.response-form h2{
+  margin-top: 1rem;
+}
+.response-form input{
+  width: 20%;
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+.response-form textarea{
+  width: 100%;
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+.response-head{
+  font-size: 4vh;
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  
+}
+.responses-list{
+  height: 30vh;
+  min-height: 10vh;
+  overflow-y: auto;
+  scrollbar-width: thin; 
+  scrollbar-color: #adb5bd #f8f9fa; 
+}
+.responses-list .userRes {
+  background-color: #f9f9f9;
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+}
+
+.responses-list .userRes h3 {
+  font-size: 18px;
+  color: #333;
+}
+
+.responses-list .userRes p {
+  font-size: 16px;
+  color: #666;
+}
+
+.responses-list .userRes h6 {
+  font-size: 14px;
+  color: #999;
+}
+
+.response {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid hsl(0, 0%, 93%);
+}
+
+#main-star{
+  margin-left: 2rem;
+  border: none;
+  background: none;
+  float: right;
+  padding-top: 3px;
+  /* margin-top: 1rem; */
+}
+
+.star-btn{
+  cursor: pointer;
+  border: none;
+  background: none;
+  float: right;
+}
+#main-star svg:hover {
+  fill: #ffd60a;
+}
+.star-btn svg:hover {
+  fill: #ffd60a;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+
+.delete-btn svg:hover {
+  fill: red;
+
+}
+
+.upVote , .downVote {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.upVote svg, .downVote svg{
+  fill: black;
+}
+.upVote svg:hover, .downVote svg:hover{
+  fill: blue;
+}
+
+
+.highlight{
+  background-color: yellow;
+}
+
+
+
+
+
+

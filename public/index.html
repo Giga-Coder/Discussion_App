@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <nav>
+        <h1>DiscussionApp</h1>
+    </nav>
+    <div class="container">
+        <div class="left">
+            <button id="new-btn">New</button>
+            <input type="text" class="search" placeholder="Enter Question">
+            <button id = "main-star"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="M480-644v236l96 74-36-122 90-64H518l-38-124ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg></button>
+            <div class="question-section">
+                <!-- <div class="question">
+                    <h2>Json & Web Storage</h2>
+        
+                    <p>how to use web Storage</p>
+                </div> -->
+            </div>
+
+        </div>
+        <div class="right">
+    <!-- Default content (visible initially) -->
+            <div class="default-content">
+                <h2>Welcome to Discussion Portal !</h2>
+                <p>Enter the subject and question to get started</p>
+                <form class="question-form">
+                    <input type="text" id="subject" placeholder="Subject" required>
+                    <textarea id="question" placeholder="Question" rows="7" required></textarea>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+
+    <!-- (hidden initially) -->
+            <div class="question-box" >
+                <h2>Question</h2>
+
+                <div class="question-display">
+                    <h3 id="box-subject"></h3>
+                    <p id="box-question"></p>
+                    <button id="resolve-btn">Resolve</button>
+                </div>
+            </div>
+            <div class="response-section">
+                <h2>Responses</h2>
+                <div class="responses-list">
+
+                </div>
+                <h2 class = "response-head">Add Response</h2>
+                <form class="response-form">
+                    <input type="text" id="name" placeholder="Enter Name" required>
+                    <textarea id="comment" placeholder="Enter Comment" rows="4" required></textarea>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <script src="async.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
